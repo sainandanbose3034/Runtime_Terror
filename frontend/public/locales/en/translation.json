@@ -1,0 +1,61 @@
+{
+    "navbar": {
+        "dashboard": "Dashboard",
+        "watchlist": "Watchlist",
+        "resources": "Resources",
+        "logout": "Logout",
+        "login": "Login"
+    },
+    "dashboard": {
+        "title": "NEO Dashboard",
+        "subtitle": "Real-time Near Earth Object Tracking",
+        "risk_level": "Risk Level",
+        "diameter": "Diameter",
+        "velocity": "Velocity",
+        "miss_distance": "Miss Distance",
+        "safe": "SAFE",
+        "hazardous": "HAZARDOUS",
+        "moderate": "MODERATE",
+        "loading": "Loading telemetry data...",
+        "status_active": "Live Feed Active",
+        "tracked_objects": "Tracked Objects",
+        "enable_alerts": "Enable Alerts",
+        "disable_alerts": "Disable Alerts",
+        "alerts_on": "Alerts On",
+        "view_list": "List",
+        "view_3d": "3D View",
+        "sort_name": "Name",
+        "sort_risk": "Risk Factor",
+        "filter_placeholder": "Filter by ID or Name..."
+    },
+    "watchlist": {
+        "title": "Target List",
+        "subtitle": "My Watchlist",
+        "empty": "No targets currently being tracked.",
+        "remove": "Remove",
+        "added": "Added",
+        "watch": "Watch"
+    },
+    "resources": {
+        "title": "Asteroid Knowledge Hub",
+        "intro_title": "Understanding Near-Earth Objects",
+        "intro_text": "Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the gravitational attraction of nearby planets into orbits that allow them to enter the Earth's neighborhood.",
+        "glossary_title": "Key Terminology",
+        "links_title": "Official Data Sources",
+        "terms": {
+            "ne": "Near-Earth Object (NEO)",
+            "ne_def": "An asteroid or comet with a perihelion distance less than 1.3 astronomical units.",
+            "pha": "Potentially Hazardous Asteroid (PHA)",
+            "pha_def": "An asteroid with a minimum orbit intersection distance of 0.05 AU or less and an absolute magnitude of 22.0 or less.",
+            "au": "Astronomical Unit (AU)",
+            "au_def": "The average distance between the Earth and the Sun, approximately 150 million kilometers.",
+            "albedo": "Albedo",
+            "albedo_def": "A measure of the reflectivity of the asteroid's surface.",
+            "magnitude": "Absolute Magnitude (H)",
+            "magnitude_def": "A measure of the intrinsic brightness of a celestial object."
+        }
+    },
+    "common": {
+        "error": "Error"
+    }
+}

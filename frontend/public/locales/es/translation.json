@@ -1,0 +1,42 @@
+{
+    "navbar": {
+        "dashboard": "Tablero",
+        "watchlist": "Lista de Seguimiento",
+        "resources": "Recursos",
+        "logout": "Cerrar Sesión",
+        "login": "Iniciar Sesión"
+    },
+    "dashboard": {
+        "title": "Tablero NEO",
+        "subtitle": "Rastreo de Objetos Cercanos a la Tierra en Tiempo Real",
+        "risk_level": "Nivel de Riesgo",
+        "diameter": "Diámetro",
+        "velocity": "Velocidad",
+        "miss_distance": "Distancia de Paso",
+        "safe": "SEGURO",
+        "hazardous": "PELIGROSO",
+        "moderate": "MODERADO",
+        "loading": "Cargando datos de telemetría...",
+        "status_active": "Transmisión Activa",
+        "tracked_objects": "Objetos Rastreados",
+        "enable_alerts": "Activar Alertas",
+        "disable_alerts": "Desactivar Alertas",
+        "alerts_on": "Alertas Activadas",
+        "view_list": "Lista",
+        "view_3d": "Vista 3D",
+        "sort_name": "Nombre",
+        "sort_risk": "Factor de Riesgo",
+        "filter_placeholder": "Filtrar por ID o Nombre..."
+    },
+    "watchlist": {
+        "title": "Lista de Objetivos",
+        "subtitle": "Mi Lista de Seguimiento",
+        "empty": "No hay objetivos siendo rastreados actualmente.",
+        "remove": "Eliminar",
+        "added": "Añadido",
+        "watch": "Seguir"
+    },
+    "common": {
+        "error": "Error"
+    }
+}

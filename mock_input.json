@@ -1,0 +1,61 @@
+{
+    "links": {
+        "next": "http://api.nasa.gov/neo/rest/v1/feed?start_date=2024-02-08&end_date=2024-02-08&detailed=false&api_key=DEMO_KEY",
+        "prev": "http://api.nasa.gov/neo/rest/v1/feed?start_date=2024-02-06&end_date=2024-02-06&detailed=false&api_key=DEMO_KEY",
+        "self": "http://api.nasa.gov/neo/rest/v1/feed?start_date=2024-02-07&end_date=2024-02-07&detailed=false&api_key=DEMO_KEY"
+    },
+    "element_count": 1,
+    "near_earth_objects": {
+        "2024-02-07": [
+            {
+                "links": {
+                    "self": "http://api.nasa.gov/neo/rest/v1/neo/3542519?api_key=DEMO_KEY"
+                },
+                "id": "3542519",
+                "neo_reference_id": "3542519",
+                "name": "(2010 PK9)",
+                "nasa_jpl_url": "http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=3542519",
+                "absolute_magnitude_h": 21.8,
+                "estimated_diameter": {
+                    "kilometers": {
+                        "estimated_diameter_min": 0.1160259082,
+                        "estimated_diameter_max": 0.2594418179
+                    },
+                    "meters": {
+                        "estimated_diameter_min": 116.0259082094,
+                        "estimated_diameter_max": 259.4418179074
+                    },
+                    "miles": {
+                        "estimated_diameter_min": 0.0720951381,
+                        "estimated_diameter_max": 0.161209635
+                    },
+                    "feet": {
+                        "estimated_diameter_min": 380.662440939,
+                        "estimated_diameter_max": 851.1870942971
+                    }
+                },
+                "is_potentially_hazardous_asteroid": true,
+                "close_approach_data": [
+                    {
+                        "close_approach_date": "2024-02-07",
+                        "close_approach_date_full": "2024-Feb-07 15:34",
+                        "epoch_date_close_approach": 1707320040000,
+                        "relative_velocity": {
+                            "kilometers_per_second": "6.4965152587",
+                            "kilometers_per_hour": "23387.4549312151",
+                            "miles_per_hour": "14532.0624021798"
+                        },
+                        "miss_distance": {
+                            "astronomical": "0.0485986877",
+                            "lunar": "18.9048905151",
+                            "kilometers": "7270258.835849819",
+                            "miles": "4517529.3526839522"
+                        },
+                        "orbiting_body": "Earth"
+                    }
+                ],
+                "is_sentry_object": false
+            }
+        ]
+    }
+}

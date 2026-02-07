@@ -1,0 +1,61 @@
+{
+    "navbar": {
+        "dashboard": "Tableau de Bord",
+        "watchlist": "Liste de Surveillance",
+        "resources": "Ressources",
+        "logout": "Déconnexion",
+        "login": "Connexion"
+    },
+    "dashboard": {
+        "title": "Tableau de Bord NEO",
+        "subtitle": "Suivi des objets géocroiseurs en temps réel",
+        "risk_level": "Niveau de Risque",
+        "diameter": "Diamètre",
+        "velocity": "Vitesse",
+        "miss_distance": "Distance de Passage",
+        "safe": "SÛR",
+        "hazardous": "DANGEREUX",
+        "moderate": "MODÉRÉ",
+        "loading": "Chargement des données de télémétrie...",
+        "status_active": "Flux En Direct Actif",
+        "tracked_objects": "Objets Suivis",
+        "enable_alerts": "Activer Alertes",
+        "disable_alerts": "Désactiver Alertes",
+        "alerts_on": "Alertes Activées",
+        "view_list": "Liste",
+        "view_3d": "Vue 3D",
+        "sort_name": "Nom",
+        "sort_risk": "Facteur de Risque",
+        "filter_placeholder": "Filtrer par ID ou Nom..."
+    },
+    "watchlist": {
+        "title": "Liste de Cibles",
+        "subtitle": "Ma Liste",
+        "empty": "Aucune cible suivie actuellement.",
+        "remove": "Retirer",
+        "added": "Ajouté",
+        "watch": "Suivre"
+    },
+    "resources": {
+        "title": "Centre de Connaissances sur les Astéroïdes",
+        "intro_title": "Comprendre les Objets Géocroiseurs",
+        "intro_text": "Les objets géocroiseurs (NEO) sont des comètes et des astéroïdes qui ont été poussés par l'attraction gravitationnelle des planètes voisines vers des orbites qui leur permettent d'entrer dans le voisinage de la Terre.",
+        "glossary_title": "Terminologie Clé",
+        "links_title": "Sources de Données Officielles",
+        "terms": {
+            "ne": "Objet Géocroiseur (NEO)",
+            "ne_def": "Un astéroïde ou une comète avec une distance de périhélie inférieure à 1,3 unité astronomique.",
+            "pha": "Astéroïde Potentiellement Dangereux (PHA)",
+            "pha_def": "Un astéroïde avec une distance minimale d'intersection orbitale de 0,05 UA ou moins et une magnitude absolue de 22,0 ou moins.",
+            "au": "Unité Astronomique (UA)",
+            "au_def": "La distance moyenne entre la Terre et le Soleil, environ 150 millions de kilomètres.",
+            "albedo": "Albédo",
+            "albedo_def": "Une mesure de la réflectivité de la surface de l'astéroïde.",
+            "magnitude": "Magnitude Absolue (H)",
+            "magnitude_def": "Une mesure de la luminosité intrinsèque d'un objet céleste."
+        }
+    },
+    "common": {
+        "error": "Erreur"
+    }
+}

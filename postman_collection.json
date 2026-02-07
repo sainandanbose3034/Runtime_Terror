@@ -1,0 +1,193 @@
+{
+    "info": {
+        "_postman_id": "cosmic-watch-backend",
+        "name": "Cosmic Watch API",
+        "description": "API documentation for the Cosmic Watch backend. Includes endpoints for Authentication (Firebase/MongoDB sync), Asteroid Data Feed (NeoWs Proxy), and Watchlist management.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Auth",
+            "item": [
+                {
+                    "name": "Sync User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer <FIREBASE_ID_TOKEN>",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Test User\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost:3000/api/auth/sync",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "auth",
+                                "sync"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Profile",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer <FIREBASE_ID_TOKEN>",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost:3000/api/auth/me",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "auth",
+                                "me"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Asteroids",
+            "item": [
+                {
+                    "name": "Get Feed (Today)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3000/api/asteroids/feed",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "asteroids",
+                                "feed"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Feed (Date Range)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3000/api/asteroids/feed?start_date=2023-10-01&end_date=2023-10-07",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "asteroids",
+                                "feed"
+                            ],
+                            "query": [
+                                {
+                                    "key": "start_date",
+                                    "value": "2023-10-01"
+                                },
+                                {
+                                    "key": "end_date",
+                                    "value": "2023-10-07"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Asteroid By ID",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3000/api/asteroids/lookup/3542519",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "asteroids",
+                                "lookup",
+                                "3542519"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Add to Watchlist",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer <FIREBASE_ID_TOKEN>",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"asteroidId\": \"3542519\",\n    \"name\": \"(2010 PK9)\",\n    \"notes\": \"Potentially hazardous\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "http://localhost:3000/api/asteroids/watchlist",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000",
+                            "path": [
+                                "api",
+                                "asteroids",
+                                "watchlist"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}

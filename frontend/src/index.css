@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-space-dark text-white font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200;
+        background-color: #020617;
+        background-image: radial-gradient(circle at 50% 0%, #2e1065 0%, #1e1b4b 25%, #020617 60%, #000000 100%);
+        min-h-screen: 100vh;
+    }
+}
+
+.glass-panel {
+    @apply backdrop-blur-md border border-white/10 shadow-lg transition-all duration-300;
+    /* Very subtle purple tint overlay, mostly transparent */
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.4) 0%, rgba(50, 40, 90, 0.3) 100%);
+}
+
+.glass-panel:hover {
+    @apply border-purple-400/20;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(139, 92, 246, 0.1) 100%);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}

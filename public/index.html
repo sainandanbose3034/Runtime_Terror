@@ -1,50 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send Data to Backend</title>
+    <title>Cosmic Watch Backend</title>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { text-align: center; padding: 2rem; border: 1px solid #1e293b; border-radius: 1rem; background: #1e293b; }
+        a { color: #38bdf8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-
 <body>
-
-    <input type="text" id="name" placeholder="Enter your name">
-    <button id="submitBtn">Submit</button>
-
-    <p id="result"></p>
-
-    <script>
-        const input = document.getElementById('name');
-        const button = document.getElementById('submitBtn');
-        const result = document.getElementById('result');
-
-        button.addEventListener('click', async () => {
-            const name = input.value.trim();
-
-            if (!name) {
-                alert("Please enter a name");
-                return;
-            }
-
-            try {
-                const response = await fetch('/api/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ name })
-                });
-
-                const data = await response.json();
-                result.innerText = data.message;
-            } catch (error) {
-                console.error(error);
-                result.innerText = "Something went wrong";
-            }
-        });
-    </script>
-
+    <div class="container">
+        <h1>Cosmic Watch Server</h1>
+        <p>Backend Status: <span style="color: #4ade80">ONLINE</span></p>
+        <p>Access the <a href="http://localhost:5173">Cosmic Watch Frontend</a></p>
+    </div>
 </body>
-
 </html>
