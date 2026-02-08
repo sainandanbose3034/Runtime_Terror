@@ -15,14 +15,27 @@ const { Server } = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
+
+const allowedOrigins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://cosmic-watch-frontend.vercel.app",
+    "https://runtime-terror-rho.vercel.app",
+    "https://runtime-terror-ujv4.vercel.app"
+];
+
 const io = new Server(server, {
     cors: {
-        origin: "*",
-        methods: ["GET", "POST"]
+        origin: allowedOrigins,
+        methods: ["GET", "POST"],
+        credentials: true
     }
 });
 
-app.use(cors());
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true
+}));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
