@@ -6,7 +6,17 @@ import { useLocation } from 'react-router-dom';
 import { MessageSquare, X, Send, Minimize2, Maximize2 } from 'lucide-react';
 
 // Initialize socket outside component to prevent multiple connections
-const socket = io(API_BASE_URL);
+const isProduction = import.meta.env.MODE === 'production';
+const socketUrl = (isProduction && (!API_BASE_URL || API_BASE_URL.includes('vercel.app')))
+    ? null
+    : API_BASE_URL;
+
+const socket = socketUrl ? io(socketUrl) : {
+    on: () => { },
+    off: () => { },
+    emit: () => { },
+    connected: false
+};
 
 const GlobalChat = () => {
     const { currentUser } = useAuth();
